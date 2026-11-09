@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gnigusie.github.io/cv/sitemap.xml
