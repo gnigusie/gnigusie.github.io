@@ -18,7 +18,7 @@
 :root{--bg:#fbf9fd;--ink:#33313a;--mute:#6d6875;--band:#f1ecf7;--accent:#8064a2;--deep:#55416f;--rule:#d9cfe6}
 @media (prefers-color-scheme:dark){:root{--bg:#1b1822;--ink:#ece8f2;--mute:#b0a9bb;--band:#262132;--accent:#b79ddb;--deep:#d3c0ee;--rule:#3a3348}}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 Georgia,"Times New Roman",serif}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Georgia,"Times New Roman",serif}
 a{color:var(--accent)}
 a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 .wrap{max-width:760px;margin:0 auto;padding:0 22px}
@@ -26,20 +26,19 @@ header{background:var(--band);border-bottom:3px solid var(--accent);padding:32px
 .hero{display:flex;align-items:center;gap:1.6rem}
 .info{flex:1;min-width:0}
 .photo{display:block;flex-shrink:0;width:130px;height:130px;border-radius:50%;object-fit:cover;object-position:center top}
-h1{margin:0;font-size:clamp(1.6rem,5vw,2.5rem);line-height:1.1;color:var(--deep);letter-spacing:-.01em}
+h1{margin:0;font-size:clamp(1.35rem,4.2vw,2rem);line-height:1.1;color:var(--deep);letter-spacing:-.01em}
 .role{margin:.4rem 0 .9rem;color:var(--mute);font-size:1.05rem}
 .links{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem 1.2rem;font-family:system-ui,sans-serif;font-size:.95rem}
 nav{font-family:system-ui,sans-serif;font-size:.92rem;padding:14px 0;border-bottom:1px solid var(--rule)}
 nav .wrap{text-align:center}
 nav a{margin:0 .6rem;text-decoration:none;display:inline-block}
 section{padding:22px 0 0}
-h2{color:var(--deep);font-size:1.4rem;margin:0 0 .35rem}
+h2{color:var(--deep);font-size:1.3rem;font-weight:700;margin:0 0 .35rem}
 .item{padding:9px 0;border-top:1px solid var(--rule)}
-.item h3{margin:0;font-size:1.08rem}
+.item h3{margin:0;font-size:1.02rem;font-weight:400}
 .item p{margin:.2rem 0;color:var(--mute)}
 .item .meta{font:.88rem system-ui,sans-serif}
 footer{margin-top:28px;padding:24px 0;border-top:1px solid var(--rule);color:var(--mute);font:.9rem system-ui,sans-serif}
-
 nav{position:sticky;top:0;background:var(--bg);z-index:10}
 nav a{padding:4px 0;border-bottom:2px solid transparent}
 nav a:hover{color:var(--deep)}
