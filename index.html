@@ -22,11 +22,13 @@ body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 Georgia,"Time
 a{color:var(--accent)}
 a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 .wrap{max-width:760px;margin:0 auto;padding:0 22px}
-header{background:var(--band);border-bottom:3px solid var(--accent);padding:48px 0 36px;text-align:center}
-.photo{display:block;width:auto;height:auto;max-width:180px;max-height:220px;margin:0 auto 1.2rem;border-radius:14px}
+header{background:var(--band);border-bottom:3px solid var(--accent);padding:32px 0 28px}
+.hero{display:flex;align-items:center;gap:1.6rem}
+.info{flex:1;min-width:0}
+.photo{display:block;flex-shrink:0;width:130px;height:130px;border-radius:50%;object-fit:cover;object-position:center top}
 h1{margin:0;font-size:clamp(1.6rem,5vw,2.5rem);line-height:1.1;color:var(--deep);letter-spacing:-.01em}
-.role{margin:.6rem 0 1.2rem;color:var(--mute);font-size:1.05rem}
-.links{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.6rem 1.2rem;font-family:system-ui,sans-serif;font-size:.95rem}
+.role{margin:.4rem 0 .9rem;color:var(--mute);font-size:1.05rem}
+.links{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem 1.2rem;font-family:system-ui,sans-serif;font-size:.95rem}
 nav{font-family:system-ui,sans-serif;font-size:.92rem;padding:14px 0;border-bottom:1px solid var(--rule)}
 nav .wrap{text-align:center}
 nav a{margin:0 .6rem;text-decoration:none;display:inline-block}
@@ -46,28 +48,30 @@ section{scroll-margin-top:56px}
 #top{position:fixed;right:18px;bottom:18px;width:42px;height:42px;border-radius:50%;border:1px solid var(--accent);background:var(--bg);color:var(--accent);font-size:1.1rem;cursor:pointer;opacity:0;pointer-events:none}
 #top.show{opacity:1;pointer-events:auto}
 #top:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+@media (max-width:560px){.hero{flex-direction:column;text-align:center}.links{justify-content:center}}
 </style>
 </head>
 <body>
 <header>
-  <div class="wrap">
+  <div class="wrap hero">
     <img class="photo" src="gere.jpg" alt="Portrait of Gebregziabihier Nigusie">
-    <h1>Gebregziabihier Nigusie</h1>
-    <p class="role">AI Engineer | Researcher</p>
-    <div class="links">
-      <a href="https://github.com/gnigusie">GitHub</a>
-      <a href="https://www.linkedin.com/in/gerenigusie">LinkedIn</a>
-      <a href="mailto:gere.nigusie@gmail.com">gere.nigusie@gmail.com</a>
-      <a href="cv.pdf">CV</a>
+    <div class="info">
+      <h1>Gebregziabihier Nigusie</h1>
+      <p class="role">AI Engineer | Researcher</p>
+      <div class="links">
+        <a href="https://github.com/gnigusie">GitHub</a>
+        <a href="https://www.linkedin.com/in/gerenigusie">LinkedIn</a>
+        <a href="mailto:gere.nigusie@gmail.com">gere.nigusie@gmail.com</a>
+        <a href="cv.pdf">CV</a>
+      </div>
     </div>
   </div>
 </header>
 <nav><div class="wrap">
-  <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#awards">Awards</a><a href="#mentoring">Mentoring</a>
+  <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#awards">Awards</a><a href="#mentoring">Mentoring</a><a href="#media">Media</a>
 </div></nav>
 <main class="wrap">
-  <section id="about">
-    <h2>About</h2>
+  <section id="about" aria-label="About">
     <p>I am an AI engineer and researcher with an MSc in Information Technology from Bahir Dar University (2022) and a BSc in Information Technology (2019). My research applies machine learning and deep learning to natural language processing, clinical imaging and signal processing in low-resource settings.</p>
     <p>My work has been published and presented at international venues including MICCAI, IJCAI, AfricaNLP and Deep Learning Indaba. I welcome research collaborations and academic opportunities in AI for health and language technologies.</p>
   </section>
@@ -100,6 +104,11 @@ section{scroll-margin-top:56px}
   <section id="mentoring">
     <h2>Mentoring</h2>
     <div class="item"><h3>Mentor, Deep Learning Indaba 2024</h3><p>Guided a four-student team on their hackathon AI project.</p></div>
+  </section>
+  <section id="media">
+    <h2>Media</h2>
+    <div class="item"><h3>From beats to bytes: AIAM's first AI-driven African music projects</h3><p class="meta">Wits University, 2026.</p><a href="https://www.wits.ac.za/future/stories/2026/from-beats-to-bytes-aiams-first-ai-driven-african-music-projects.html">Read article</a></div>
+    <div class="item"><h3>Wits announces winners of AI &amp; African Music Project</h3><p class="meta">Wits University, 2026.</p><a href="https://www.wits.ac.za/future/stories/2026/wits-announces-winners-of-ai--african-music-project.html">Read article</a></div>
   </section>
 </main>
 <footer><div class="wrap">&copy; 2026 Gebregziabihier Nigusie</div></footer>
